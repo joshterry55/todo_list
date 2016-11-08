@@ -6,6 +6,8 @@ class TodosController < ApplicationController
     else
       @percent = 0
     end
+    @percent1 = Todo.where(complete: true).count
+    @percent2 = Todo.where(complete: false).count
   end
 
   def show

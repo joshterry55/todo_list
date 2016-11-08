@@ -3,7 +3,7 @@
 
 
 <hr>
-<h3>Incomplete:</h3>
+<h3><%= @percent2 %> Incomplete:</h3>
 <br>
 <p>
   Color Legend:
@@ -34,7 +34,7 @@
 <br>
 <%= link_to 'New Item', new_todo_path %>
 <hr>
-<h3>Completed:</h3>
+<h3><%= @percent1 %> Completed:</h3>
 <ol>
   <% @todos.each do |todo| %>
     <% if todo.complete == true %>
